@@ -1,0 +1,308 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway:800');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Micah Fischer
+   Date:   10/23/18
+
+   Filename:         pcg_paper.css
+   Supporting Files: NA
+
+*/
+
+html {
+    background-color: rgb(29, 25, 32);
+}
+
+header {
+    margin: 10px 0;
+    background: url("https://images.pexels.com/photos/404976/pexels-photo-404976.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+header h1 {
+    color: white;
+    font-size: calc(24px + 2vw);
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);;
+    max-width: 1400px;
+}
+
+header h2 {
+    color: white;
+    font-size: calc(16px + 1vw);
+    font-family: 'Lato', sans-serif;
+    margin: 20px auto 0;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    border: 4px solid white;
+    padding: 20px;
+    color: white;
+    font-size: calc(16px + 1vw);
+    font-family: 'Raleway', sans-serif;
+    margin: 20px auto 0;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 1400px;
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    transition: .2s;
+}
+
+header a:hover {
+    background-color: white;
+    color: rgb(135, 89, 180);
+}
+
+.mainnav {
+    background-color: rgb(29, 25, 32);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    position: sticky;
+    top: 0;
+    padding: 8px 0;
+
+}
+
+.mainnav a {
+    background-color: rebeccapurple;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 2px;
+    transition: .1s;
+}
+
+.mobilenav span {
+    background-color: rebeccapurple;
+    font-family: 'Raleway', sans-serif;
+    display: none;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 26px;
+    margin: 0 2px;
+    transition: .1s;
+}
+
+.mobilenav a {
+    display: none;
+}
+
+.mobilenav h1 {
+    display: none;
+}
+
+.mobilenav:hover a {
+    display: block;
+}
+
+.mobilenav:hover h1 {
+    display: block;
+}
+
+.mainnav a:hover {
+    background-color: rgb(135, 89, 180);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+}
+
+aside {
+    margin: 10px 0;
+    background-color: rebeccapurple;
+}
+
+aside img {
+    width: 100%;
+}
+
+aside h1 {
+    color: white;
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    margin: 8px;
+}
+
+aside div {
+    background-color: rgb(135, 89, 180);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+aside a {
+        font-family: 'Lato', sans-serif;
+        display: block;
+        text-align: left;
+        padding: 0 6px;
+        color: white;
+        text-decoration: none;
+        font-size: 26px;
+        margin: 2px;
+        transition: .1s;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    background-color: rebeccapurple;
+}
+
+article section {
+    margin: 10px;
+    background-color: rgb(135, 89, 180);
+    height: fit-content;
+}
+
+article section img {
+    width: 100%;
+    display: block;
+}
+
+article section h1 {
+    color: white;
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    margin: 8px;
+}
+
+article section h2 {
+    color: rgb(219, 219, 219);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    margin: 0 8px;
+}
+
+article section span {
+    color: rgb(205, 189, 207);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    margin: -12px 8px 24px; 
+}
+
+aside h2 {
+    background-color: rgb(135, 89, 180);
+    color: rgb(219, 219, 219);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    margin: 0 8px;
+}
+
+aside h4 {
+    background-color: rgb(135, 89, 180);
+    color: rgb(205, 189, 207);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    margin: 4px 8px 4px; 
+}
+
+article section p {
+    color: white;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    margin: 8px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .mainnav {
+        display: none;
+    }
+
+    .mobilenav span {
+        display: block;
+        text-align: left;
+    }
+
+    .mobilenav {
+        background: rgb(29, 25, 32);
+        position: sticky;
+        top: 0;
+        padding: 8px 0;
+    }
+
+    .mobilenav main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .mobilenav a {
+        background-color: rgb(135, 89, 180);
+        font-family: 'Raleway', sans-serif;
+        display: none;
+        text-align: left;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 26px;
+        margin: 0 2px;
+        transition: .1s;
+    }
+
+    .mobilenav h1 {
+        background-color: rgb(135, 89, 180);
+        color: white;
+        font-size: 32px;
+        font-family: 'Raleway', sans-serif;
+        padding: 10px;
+        margin: 0 2px;
+        display: none;
+        border-bottom: 2px white solid;
+        border-top: 2px white solid;
+    }
+
+    .mobilenav a:hover {
+        background-color: rebeccapurple;
+    }
+
+    aside#links {
+        display: none;
+    }
+
+    aside#stories section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .mobilenav main {
+        grid-template-columns: 1fr;
+        height: 400px;
+        margin-bottom: -400px;
+        overflow: auto;
+    }
+
+    article {
+        grid-template-columns: 1fr;
+    }
+}
