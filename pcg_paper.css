@@ -9,19 +9,22 @@
    Author: Micah Fischer
    Date:   10/23/18
 
-   Filename:         pcg_paper.css
+   Filename: pcg_paper.css
    Supporting Files: NA
 
 */
 
+/* Set font. */
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Body background color */
 body {
     background-color: black;
 }
 
+/* Navigation menu grid with font size set and text align set to center. Background color set to black. Navigation links with hover psuedo class.  */
 nav {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -42,10 +45,11 @@ nav a:hover {
     color: white;
 }
 
+/* Header set as grid, height set to 300px. */
 header {
     background: royalblue;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     height: 300px;
 }
 
@@ -56,6 +60,7 @@ header h1 {
     color: white;
 }
 
+/* Vertical navigation floated and set to 25% of page. Links floated and set to block. H1 headings for navigation menu sections. */
 nav.vertical {
     float: left;
     width: 25%;
@@ -76,6 +81,7 @@ nav.vertical h1 {
     text-decoration: underline;
 }
 
+/* Main set for article layouts. Main section background color set to white. Section heading and paragraph styles set. */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -98,6 +104,7 @@ main section p {
     padding: 0 20px;
 }
 
+/* Hides mobile nav, shows desktop nav. */
 nav.desktop {
     display: block;
 }
@@ -106,6 +113,7 @@ nav.mobile {
     display: none;
 }
 
+/* Media query adjust styles and widths based on screen size. On mobile devices show mobile menu, on desktop hide desktop navigation. */
 @media only screen and (max-width: 1000px) {
 
     nav {
