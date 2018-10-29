@@ -21,19 +21,19 @@
 
 /* Body background color */
 body {
-    background-color: black;
+    background-color: rgb(65, 58, 58);
     margin: 20px auto;
     max-width: 1600px;
     min-width: 200px;
 }
 
-/* Navigation menu grid with font size set and text align set to center. Background color set to black. Navigation links with hover psuedo class.  */
+/* Navigation menu grid with font size set and text align set to center. Background color set to rgb(65, 58, 58). Navigation links with hover psuedo class.  */
 nav {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     font-size: 22px;
     text-align: center;
-    background-color: black;
+    background-color: rgb(65, 58, 58);
     z-index: 100;
 }
 
@@ -49,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: royalblue;
+    background-color: rgb(11, 24, 24);
     text-decoration: none;
     color: white;
 }
@@ -70,7 +70,7 @@ header h1 {
     font-size: calc(32px + 4vw);
     font-weight: bold;
     text-align: center;
-    color: black;
+    color: rgb(65, 58, 58);
     margin: 0;
     padding-top: 40px;
 }
@@ -79,13 +79,12 @@ header h2 {
     background-color: rgba(255, 255, 255, 0.5);
     font-size: calc(22px + 2vw);
     font-family: 'Times New Roman', Times, serif;
-    color: black;
+    color: rgb(65, 58, 58);
     text-align: center;
     font-weight: bold;
     margin: 0;
     padding-bottom: 120px;
 }
-
 
 /* Header link arrow, positioned relatively and centered. Padding and border radius added to make a circular button. */
 header a {
@@ -93,10 +92,10 @@ header a {
     top: -100px;
     left: 0;
     background-color: rgba(255, 255, 255, 0.5);
-    border: black 2px solid;
+    border: rgb(65, 58, 58) 2px solid;
     font-size: 32px;
     padding: 15px 20px;
-    color: black;
+    color: rgb(65, 58, 58);
     text-decoration: none;
     display: block;
     margin: 0 auto;
@@ -142,7 +141,7 @@ main section {
 }
 
 main section h1 {
-    background-color: black;
+    background-color: rgb(65, 58, 58);
     font-size: calc(16px + 1vw);
     font-weight: bold;
     text-align: left;
@@ -162,6 +161,24 @@ nav.desktop {
 
 nav.mobile {
     display: none;
+}
+
+nav#trending {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav#trending section {
+    height: 300px;
+    background: url("https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1002f970f615e046c7c5376c46e13bef&auto=format&fit=crop&w=2853&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav#trending section:nth-of-type(even) {
+    background: url("https://images.unsplash.com/photo-1524646349956-1590eacfa324?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=caa9d703bcd1b34aee9ab9f3538cf0c0&auto=format&fit=crop&w=2850&q=80");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Media query adjust styles and widths based on screen size. On mobile devices show mobile menu, on desktop hide desktop navigation. */
@@ -196,7 +213,7 @@ nav.mobile {
 footer {
     font-size: 22px;
     color: white;
-    background-color: royalblue;
+    background-color: rgb(11, 24, 24);
     width: 100%;
     padding: 0;
     margin-top: 30px;
@@ -212,4 +229,5 @@ footer {
     clear: both;
     content: "";
     display: table;
+
 }
