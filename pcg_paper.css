@@ -22,6 +22,9 @@
 /* Body background color */
 body {
     background-color: black;
+    margin: 20px auto;
+    max-width: 1600px;
+    min-width: 200px;
 }
 
 /* Navigation menu grid with font size set and text align set to center. Background color set to black. Navigation links with hover psuedo class.  */
@@ -31,6 +34,12 @@ nav {
     font-size: 22px;
     text-align: center;
     background-color: black;
+    z-index: 100;
+}
+
+nav:first-of-type {
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -47,17 +56,58 @@ nav a:hover {
 
 /* Header set as grid, height set to 300px. */
 header {
-    background: royalblue;
+    background: url("https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cc06f2b72a5e6e13cd0ef1da2939590&auto=format&fit=crop&w=1650&q=80");
+    background-attachment: fixed;
+    background-size: cover;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 300px;
+    height: 96vh;
+    border-bottom: 6px white solid;
 }
 
 header h1 {
+    background-color: rgba(255, 255, 255, 0.5);
     font-size: calc(32px + 4vw);
     font-weight: bold;
-    padding-left: 8vw;
-    color: white;
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding-top: 40px;
+}
+
+header h2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: calc(22px + 2vw);
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 120px;
+}
+
+
+/* Header link arrow, positioned relatively and centered. Padding and border radius added to make a circular button. */
+header a {
+    position: relative;
+    top: -100px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: black 2px solid;
+    font-size: 32px;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+header a:hover {
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 /* Vertical navigation floated and set to 25% of page. Links floated and set to block. H1 headings for navigation menu sections. */
@@ -97,6 +147,7 @@ main section h1 {
     font-weight: bold;
     text-align: left;
     padding: 20px;
+    margin: 0;
     color: white;
 }
 
@@ -140,4 +191,25 @@ nav.mobile {
     main {
         grid-template-columns: 1fr;
     }
+}
+
+footer {
+    font-size: 22px;
+    color: white;
+    background-color: royalblue;
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+}
+
+footer p {
+    display: block;
+    float: left;
+    padding: 20px;
+}
+
+footer {
+    clear: both;
+    content: "";
+    display: table;
 }
