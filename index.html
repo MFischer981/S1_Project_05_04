@@ -17,11 +17,24 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" href="pcg_paper.css">
+    <script src="mobile.js"></script>
 </head>
 
 <body>
+    <div id="Sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="">Home</a>
+        <a href="">News</a>
+        <a href="">Local</a>
+        <a href="">State</a>
+        <a href="">National</a>
+        <a href="">World</a>
+        <a href="">Sports</a>
+        <a href="">Weather </a>
+    </div>
 
     <nav>
+        <span onclick="openNav()"><i class="fas fa-bars"></i></span>
         <a href="">Home</a>
         <a href="">News</a>
         <a href="">Local</a>
@@ -31,6 +44,7 @@
         <a href="">Sports</a>
         <a href="">Weather </a>
     </nav>
+
     <header>
         <div></div>
         <div>
@@ -42,31 +56,21 @@
     </header>
 
     <nav id="trending">
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section id="story1"><a href="">Complete Marathon Results</a></section>
+        <section id="story2"><a href="">National Park Acquires Land</a></section>
+        <section id="story3"><a href="">School Board Election Results</a></section>
+        <section id="story4"><a href="">Spending Referendum Defeated</a></section>
+        <section id="story5"><a href="">Graduation Awards</a></section>
+        <section id="story6"><a href="">New Highway Proposed</a></section>
+        <section id="story7"><a href="">Camping Tips</a></section>
+        <section id="story8"><a href="">Cougar Sightings Increase</a></section>
+        <section id="story9"><a href="">Editorials</a></section>
+        <section id="story10"><a href="">Park City Profile</a></section>
+        <section id="story11"><a href="">Advertisements</a></section>
+        <section id="story12"><a href="">Tourism</a></section>
     </nav>
 
     <nav class="vertical desktop">
-        <!-- <h1>Trending Stories</h1>
-        <a href="">Complete Marathon Results</a>
-        <a href="">National Park Acquires Land</a>
-        <a href="">School Board Election Results</a>
-        <a href="">Spending Referendum Defeated</a>
-        <a href="">Graduation Awards</a>
-        <a href="">New Highway Proposed</a>
-        <a href="">Camping Tips</a>
-        <a href="">Cougar Sightings Increase</a>
-        <a href="">Editorials</a>
-        <a href="">Park City Profile</a> -->
         <h1>Advertisements</h1>
         <a href="">Classifieds</a>
         <a href="">For Sale</a>
