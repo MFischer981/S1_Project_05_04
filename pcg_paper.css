@@ -187,40 +187,51 @@ nav#trending section:hover {
     background-size: 140%;
 }
 
-/* Background images for trending story links. */
+/* Background images for trending story links specifically assigned based on id. */
 #story1 {
     background: url("https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1002f970f615e046c7c5376c46e13bef&auto=format&fit=crop&w=1353&q=80");
 }
+
 #story2 {
     background: url("https://images.unsplash.com/photo-1531303919131-9df51d2b0cc7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81b60a53e463a1d538eb4c2b095cd342&auto=format&fit=crop&w=1350&q=80")
 }
+
 #story3 {
     background: url("https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1d5d43575cce36ed90f500d138fda96d&auto=format&fit=crop&w=1404&q=80")
 }
+
 #story4 {
     background: url("https://images.unsplash.com/photo-1521579772986-45a33628a34e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=171149e28b4b8aa171238f11410d072e&auto=format&fit=crop&w=1350&q=80")
 }
+
 #story5 {
     background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=352d3cdaa50b65c4adf76c1d4dd4ca7e&auto=format&fit=crop&w=1350&q=80")
 }
+
 #story6 {
     background: url("https://images.unsplash.com/photo-1534158975540-36cc301767ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d04982f91971272262a24a307ced5b99&auto=format&fit=crop&w=1491&q=80")
 }
+
 #story7 {
     background: url("https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5cedc6b95f731395da7269d2341f9a5e&auto=format&fit=crop&w=1350&q=80")
 }
+
 #story8 {
     background: url("https://images.unsplash.com/photo-1527720255604-b27935ade401?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c80d4a623fceaa6be3181527e987c20e&auto=format&fit=crop&w=1350&q=80")
 }
+
 #story9 {
     background: url("https://images.unsplash.com/photo-1533040038109-9b1fb74bb5d3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0ec98896ef17b7453d318ccd8dd10c20&auto=format&fit=crop&w=975&q=80")
 }
+
 #story10 {
     background: url("https://images.unsplash.com/photo-1519987519766-06f3f00495d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aa38fd7bf0ab15d49a7d42fe24c6628e&auto=format&fit=crop&w=1351&q=80")
 }
+
 #story11 {
     background: url("https://images.unsplash.com/photo-1521989841745-2fded4328e13?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=78f3d18f7c68865f0b829d851b25e278&auto=format&fit=crop&w=1350&q=80")
 }
+
 #story12 {
     background: url("https://images.unsplash.com/photo-1532510933101-b163ecba2110?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=31c388d404e3cc0555734f0f4fb08f5c&auto=format&fit=crop&w=1317&q=80")
 }
@@ -255,9 +266,10 @@ span {
         display: none;
     }
 
-nav.vertical {
-    z-index: 0;
-}
+    nav.vertical {
+        z-index: 0;
+    }
+
     nav.vertical a {
         display: block;
     }
@@ -290,7 +302,7 @@ nav.vertical {
         grid-template-columns: 1fr;
     }
 
-    
+
     nav#trending {
         grid-template-columns: 1fr;
     }
@@ -326,16 +338,16 @@ footer::after {
 
 /* Class for sidenaviagation, width set to zero by default but changes on click due to JavaScript. Transition on slideout. */
 .sidenav {
-    height: 100%; 
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: rgb(65, 58, 58);
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s; 
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
     z-index: 200;
 }
 
@@ -365,6 +377,11 @@ footer::after {
 
 /* Media query sets smaller font size and padding for smaller phones. */
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
