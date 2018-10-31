@@ -1,9 +1,9 @@
-/* Set the width of the side navigation to 250px */
+/* Sidebar grows to width of 250px on click. */
 function openNav() {
     document.getElementById("Sidenav").style.width = "250px";
 }
 
-/* Set the width of the side navigation to 0 */
+/* Sidebar shrinks on click to width of 0. */
 function closeNav() {
     document.getElementById("Sidenav").style.width = "0";
 }

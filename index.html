@@ -13,12 +13,14 @@
 
     Filename: index.html
    -->
-
+    <!-- Font Awesome, CSS and JS imported. -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" href="pcg_paper.css">
     <script src="mobile.js"></script>
 </head>
+
+<!-- Sidenav class for mobile menu with links. -->
 
 <body>
     <div id="Sidenav" class="sidenav">
@@ -33,6 +35,7 @@
         <a href="">Weather </a>
     </div>
 
+    <!-- Desktop nav, span hidden on larger devices. -->
     <nav>
         <span onclick="openNav()"><i class="fas fa-bars"></i></span>
         <a href="">Home</a>
@@ -45,6 +48,7 @@
         <a href="">Weather </a>
     </nav>
 
+    <!-- Header spaced out with CSS grid. Elements in middle. Link centered with positioning. -->
     <header>
         <div></div>
         <div>
@@ -55,6 +59,7 @@
         <div></div>
     </header>
 
+    <!-- Trending grid with stories. IDs for different background images. -->
     <nav id="trending">
         <section id="story1"><a href="">Complete Marathon Results</a></section>
         <section id="story2"><a href="">National Park Acquires Land</a></section>
@@ -70,6 +75,7 @@
         <section id="story12"><a href="">Tourism</a></section>
     </nav>
 
+    <!-- Vertical navigation with links. Hidden on mobile. -->
     <nav class="vertical desktop">
         <h1>Advertisements</h1>
         <a href="">Classifieds</a>
@@ -88,6 +94,7 @@
         <a href="">Contact Us </a>
     </nav>
 
+    <!-- Grid with articles, and article content. -->
     <main>
         <section>
             <h1>Local Woman Wins Marathon</h1>
@@ -154,6 +161,7 @@
             <p>In case of an attack, stay on your feet and fight back aggressively. </p>
         </section>
 
+        <!-- Vertical Nav for smaller devices. -->
         <nav class="vertical mobile">
             <h1>Advertisements</h1>
             <a href="">Classifieds</a>
@@ -173,6 +181,7 @@
         </nav>
     </main>
 
+    <!-- Footer with container collapse. -->
     <footer>
         <p>&copy; 2018 News Company News Website. All Rights Reserved.</p>
     </footer>
